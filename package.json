@@ -1,0 +1,24 @@
+{
+  "name": "@azertypow/vertical-text-scrolling",
+  "version": "1.0.0",
+  "description": "simply scroll text vertically for a given speed",
+  "main": "lib/main.js",
+  "typing": "lib/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf ./lib/ ./dist/ .cache/",
+    "sample": "npm run dev & parcel ./samples/index.html"
+  },
+  "keywords": [
+    "typescript",
+    "text scrolling"
+  ],
+  "author": "nicolas baldran",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {}
+}
