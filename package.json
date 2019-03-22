@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "simply scroll text vertically for a given speed",
   "main": "lib/main.js",
-  "typing": "lib/main.d.ts",
+  "typing": "lib/textToScroll.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
