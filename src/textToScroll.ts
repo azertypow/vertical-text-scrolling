@@ -8,10 +8,7 @@ const ELEMENT_TO_SCROLL_CLASSNAME = "vts__text-to-scroll"
  * */
 export default function(element: HTMLElement, speed: number) {
 
-  const styleElement = document.createElement("style")
-  styleElement.innerText = cssStyle;
-
-  document.body.appendChild(styleElement)
+  addAnimationStyleOnDocument()
 
   element.classList.add(ELEMENT_TO_SCROLL_CLASSNAME)
 
@@ -21,3 +18,9 @@ export default function(element: HTMLElement, speed: number) {
 }
 
 
+function addAnimationStyleOnDocument() {
+  const styleElement = document.createElement("style")
+  styleElement.innerText = cssStyle;
+
+  document.body.appendChild(styleElement)
+}
