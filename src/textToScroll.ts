@@ -10,11 +10,7 @@ export default function(element: HTMLElement, speed: number) {
 
   addAnimationStyleOnDocument()
 
-  element.classList.add(ELEMENT_TO_SCROLL_CLASSNAME)
-
-  const d = element.getBoundingClientRect().width
-
-  element.style.animationDuration = `${d / speed}s`
+  setAnimation(element, speed)
 }
 
 
@@ -23,4 +19,12 @@ function addAnimationStyleOnDocument() {
   styleElement.innerText = cssStyle;
 
   document.body.appendChild(styleElement)
+}
+
+function setAnimation(element: HTMLElement, speed: number) {
+  element.classList.add(ELEMENT_TO_SCROLL_CLASSNAME)
+
+  const d = element.getBoundingClientRect().width
+
+  element.style.animationDuration = `${d / speed}s`
 }
