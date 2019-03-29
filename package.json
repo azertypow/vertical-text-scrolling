@@ -1,6 +1,6 @@
 {
   "name": "@azertypow/vertical-text-scrolling",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "simply scroll text vertically for a given speed",
   "main": "lib/main.js",
   "typing": "lib/textToScroll.d.ts",
